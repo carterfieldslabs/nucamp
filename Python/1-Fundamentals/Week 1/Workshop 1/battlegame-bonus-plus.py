@@ -31,19 +31,19 @@ while True:
         print("4)   Orc")
         print("5)   Exit")
 
-        choice = input("Choose your character: ")
+        choice = input("Choose your character: ").lower()
 
-        if choice == "1":
+        if choice == "1" or choice == wizard.lower():
             character = wizard
             my_damage = wizard_damage
             my_hp = wizard_hp
             break
-        if choice == "2":
+        if choice == "2" or choice == elf.lower():
             character = elf
             my_damage = elf_damage
             my_hp = elf_hp
             break
-        if choice == "3":
+        if choice == "3" or choice == human.lower():
             character = human
             my_damage = human_damage
             my_hp = human_hp
@@ -65,7 +65,7 @@ while True:
         print("Health:", my_hp)
         print("Damage:", "1 -",my_damage)
         print("")
-        char_name = input("What name would you like to give your " + character + "? : ")
+        char_name = input("What Name would you like to give your " + character + "? : ")
         print("")
 
 
