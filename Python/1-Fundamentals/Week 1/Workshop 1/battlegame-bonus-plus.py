@@ -86,18 +86,18 @@ while True:
             print("")
             time.sleep(2)
         if dragon_hp <= 0:
-            print("The Dragon has lost the battle.")
+            print(char_name, "the", character, "has slain The Dragon!")
             break
         
         dragon_round_dmg = random.randint(0, dragon_damage)
         my_hp = my_hp - dragon_round_dmg
         if dragon_round_dmg == 0:
-            print("The Dragon misses the", character)
+            print("The Dragon misses the", char_name, "the", character)
             print(char_name, "the", character + "'s hitpoints are now:", my_hp)
             print("")
             time.sleep(2)
         else:
-            print("The Dragon strikes back at", character, "and hits for", dragon_round_dmg,"points!")
+            print("The Dragon strikes back at", char_name, "the", character, "and hits for", dragon_round_dmg,"points!")
             print(char_name, "the", character + "'s hitpoints are now:", my_hp)
             print("")
             
